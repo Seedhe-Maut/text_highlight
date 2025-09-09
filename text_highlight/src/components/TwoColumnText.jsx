@@ -22,6 +22,10 @@ export default function TwoColumnText() {
     setActiveIdx(idx);
     const mark = paraRef.current?.querySelector(`[data-i='${idx}']`);
     if (mark) mark.scrollIntoView({ behavior: "smooth", block: "center" });
+
+    setTimeout(() => {
+      setActiveIdx(null);
+    }, 3000); // remove highlight after 3 seconds
   };
 
   /* ----- Highlight and Scroll Logic ----- */
