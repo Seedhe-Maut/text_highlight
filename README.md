@@ -24,6 +24,9 @@ Open http://localhost:3000 and click any bullet.
 
 src/
 ├─ components/
+
 │  ├─ TwoColumnText.jsx   # main component
+
 │  └─ TwoColumnText.css   # styles + responsive rules
+
 └─ App.js                 # demo usage
