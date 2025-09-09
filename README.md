@@ -23,6 +23,7 @@ Open http://localhost:3000 and click any bullet.
 📁 Project Structure
 
 src/
+
 ├─ components/
 
 │  ├─ TwoColumnText.jsx   # main component
