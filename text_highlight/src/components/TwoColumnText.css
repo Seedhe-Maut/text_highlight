@@ -1,0 +1,74 @@
+.two-column-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  padding: 1rem;
+  height: 80vh;
+}
+
+.col {
+  overflow-y: auto;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fafafa;
+}
+
+.left .bullet {
+  margin: 0 0 0.6rem 0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.left .bullet:hover {
+  background: #e6f2ff;
+}
+
+.para-block {
+  margin-bottom: 1.2rem;
+}
+.para-title {
+  margin: 0 0 0.4rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.para .sentence {
+  display: inline;
+}
+.para .detail {
+  color: #555;
+}
+.para .highlight {
+  background: #ffe066;
+  transition: background 0.3s;
+}
+
+@media (max-width: 700px) {
+  .two-column-text {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+}
+
+.report {
+  margin: 0;
+  text-align: justify;
+}
+
+.report .clause {
+  display: inline;
+}
+
+.report .detail {
+  color: #000000;
+}
+
+.report .highlight {
+  background: #ffe066;
+  transition: background 0.3s;
+}
